@@ -1,0 +1,61 @@
+body{
+    background: #262626;
+}
+
+div.container1 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+div.container2 {
+    max-width: 700px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.rectangle {
+    width: 150px;
+    height: 100px;
+    background-color: rebeccapurple;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.animation .rectangle{
+    animation: rotating-rectangle 5s linear infinite;
+}
+.animation .square{
+    animation: moving-square 5s linear infinite alternate;
+}
+
+h1 {
+    color: gray;
+    text-align: center;
+    font-family: arial;
+}
+
+@keyframes rotating-rectangle{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes moving-square{
+    from{transform: translateX(-285px);}
+    to{transform: translateX(285px);}
+}
